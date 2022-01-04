@@ -10,21 +10,21 @@ Write a program that asks a user for their favorite color, then allow them to ty
 
 In the following example, the user types in "Blue" for their favorite color:
 
-Please type your favorite color: Blue
+<pre><code>Please type your favorite color: Blue
 
 Your favorite color is
 
-Blue
+Blue</code></pre>
 
 Please note that the underline in this example for the word "Blue" is signifying that the user typed that in. You do not need to produce any underlines in your program.
 
 In this example, the user types "Hot Pink" for their favorite color:
 
-Please type your favorite color: Hot Pink
+<pre><code>Please type your favorite color: Hot Pink
 
 Your favorite color is
 
-Hot Pink
+Hot Pink</code></pre>
 
 Notice that the program displays back the color that the user entered, so it is different each time, depending on the color that was typed.
 
