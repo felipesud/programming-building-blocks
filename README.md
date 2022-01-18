@@ -6,3 +6,5 @@
 [Week 01 - Getting Started](https://github.com/felipesud/programming-building-blocks/tree/master/week01-getting-started) 
 
 [Week 02 - Input / Output](https://github.com/felipesud/programming-building-blocks/tree/master/week02_input_output) 
+
+[Week 03 - Variables and Expressions](https://github.com/felipesud/programming-building-blocks/tree/master/week03_variables_expressions) 
