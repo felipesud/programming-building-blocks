@@ -8,13 +8,13 @@ print(f"What is the price of an adult\'s meal? ${a_meal}")
 print(f"How many children are there? {children}")
 print(f"How many adults are there? {adults}")
 print(f"What is the sales tax rate? {tax_rate}")
-subtotal = 0
-sales_tax = 0
-total = 0
-print(f"\nSubtotal: {subtotal}")
-print(f"Sales Tax: {sales_tax}")
-print(f"Total: {total}")
+subtotal = (float(c_meal) * float(children)) + (float(a_meal) * float(adults))
+sales_tax = subtotal * (float(tax_rate)/100)
+total = subtotal + sales_tax
+print(f"\nSubtotal: ${subtotal:.2f}")
+print(f"Sales Tax: ${sales_tax:.2f}")
+print(f"Total: ${total:.2f}")
 
 payment = input('\nWhat is the payment amount?')
 change = float(payment) - float(total)
-print(f"Change: ${change}")
+print(f"Change: ${change:.2f}")
