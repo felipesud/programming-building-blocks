@@ -13,9 +13,11 @@ print(f"How many children are there? {children}")
 print(f"How many adults are there? {adults}")
 print(f"What is the sales tax rate? {tax_rate}")
 subtotal = (c_meal * children) + (a_meal * adults) + (p_dessert * desserts)
+tip = subtotal * 0.10
 sales_tax = subtotal * (tax_rate / 100)
-total = subtotal + sales_tax
+total = subtotal + sales_tax + tip
 print(f"\nSubtotal: ${subtotal:.2f}")
+print(f"10% Tip for the Waiter: ${tip:.2f}")
 print(f"Sales Tax: ${sales_tax:.2f}")
 print(f"Total: ${total:.2f}")
 
