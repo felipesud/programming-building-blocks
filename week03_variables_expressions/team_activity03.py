@@ -1,35 +1,53 @@
+# Week 3 Team Activity
+# Reference: https://byui-cse.github.io/cse110-course/lesson03/teach.html
+
+## CORE REQUIREMENTS
+pi = 3.14
+
+square_length = float(input("What is the length of a side of the square? "))
+square_area = square_length * square_length
+
+print(f"The area of the square is {square_area}\n")
+
+rectangle_length = float(input("What is the length of rectangle? "))
+rectangle_width = float(input("What is the width of the rectangle? "))
+rectangle_area = rectangle_length * rectangle_width
+
+print(f"The area of the rectangle is: {rectangle_area}\n")
+
+cicle_radius = float(input("What is the radius of the circle? "))
+cicle_area = pi * (cicle_radius ** 2)
+
+print(f"The area of the circle is: {cicle_area}\n")
+
+## STRETCH CHALLENGE 1
 import math
-# AREA OF THE SQUARE => Area = Length * Length or Area = Length ** 2
-squ_length = float(input('What is the length of a side of the square? '))
-print(f'The area of the square is: {squ_length ** 2}')
+cicle_radius = float(input("What is the radius of the circle? "))
+cicle_area = math.pi * (cicle_radius ** 2)
 
-# AREA OF THE RECTANGLE => Area = Length * Width
-rec_length = float(input('What is the length of rectangle? '))
-rec_width = float(input('What is the width of the rectangle? '))
-print(f'The area of the rectangle is: {rec_length * rec_width}')
+print(f"The area of the circle is: {cicle_area}\n")
 
-# AREA OF THE CIRCLE => Area = Pi * (Radius ** 2)
-rad_circle = float(input('What is the radius of the circle?'))
-print(f'The area of the circle is: {math.pi * (rad_circle ** 2):.4f}')
+## STRETCH CHALLENGE 2
+length = float(input("What is the length do you want to use? "))
 
-# STRETCH CHALLENGE
-print('\n------------------------------------------------------------------------------')
-print('\nSTRETCH CHALLENGE\n')
-single_length = float(input('Please type a single length: '))
+print(f"The area of the square is {length * length}\n")
+print(f"The area of the circle is: {math.pi * (length ** 2)}\n")
+print(f"The volume of the cube is {length * length * length}\n")
+print(f"The volume of the sphere is: {(4/3) * math.pi * (length ** 3)}\n")
 
-# Square Area A = l ** 2
-square_area = single_length ** 2
-print(f'The square is: {square_area:.2f}')
+## STRETCH CHALLENGE 3
+length_cm = float(input("What is the length do you want to use in centimeter? "))
+length_m = length_cm / 100
 
-# Circle Area A = Pi * (r ** 2)
-circle_area = math.pi * (single_length ** 2)
-print(f'The circle area is: {circle_area:.2f}')
+print(f"The area of the square in centimeter is {length_cm * length_cm}")
+print(f"The area of the square in meters is {length_m * length_m}")
+print(f"The area of the square in meters is {(length_cm * length_cm) / 10000}\n")
 
-# Cube Volume V = l ** 3
-cube_volume = single_length ** 3
-print(f'The volume of the cube is: {cube_volume:.2f}')
+print(f"The area of the circle in centimeter is: {math.pi * (length_cm ** 2)}")
+print(f"The area of the circle in meters is: {math.pi * (length_m ** 2)}\n")
 
-# Sphere Volume  V = 4/3 Pi * r ** 3
-sph_volume = (4 / 3) * math.pi * (single_length ** 3)
-print(f'The volume of the sphere is: {sph_volume:.2f}')
-print('\n------------------------------------------------------------------------------')
+print(f"The volume of the cube in centimeter is {length_cm * length_cm * length_cm}")
+print(f"The volume of the cube in meters is {length_m * length_m * length_m}\n")
+
+print(f"The volume of the sphere in centimeter is: {(4/3) * math.pi * (length_cm ** 3)}\n")
+print(f"The volume of the sphere in meters is: {(4/3) * math.pi * (length_m ** 3)}\n")
