@@ -1,0 +1,26 @@
+c_meal = float(input('What is the price of a child\'s meal?'))
+a_meal = float(input('What is the price of an adult\'s meal?'))
+p_dessert = float(input('What is the price of a dessert'))
+desserts = int(input('How many desserts were served?'))
+children = int(input('How many children are there?'))
+adults = int(input('How many adults are there?'))
+tax_rate = float(input('What is the sales tax rate?'))
+print(f"What is the price of a child\'s meal? ${c_meal}")
+print(f"What is the price of an adult\'s meal? ${a_meal}")
+print(f"What is the price of a dessert ${p_dessert}")
+print(f"How many desserts were served? {desserts}")
+print(f"How many children are there? {children}")
+print(f"How many adults are there? {adults}")
+print(f"What is the sales tax rate? {tax_rate}")
+subtotal = (c_meal * children) + (a_meal * adults) + (p_dessert * desserts)
+tip = subtotal * 0.10
+sales_tax = subtotal * (tax_rate / 100)
+total = subtotal + sales_tax + tip
+print(f"\nSubtotal: ${subtotal:.2f}")
+print(f"10% Tip for the Waiter: ${tip:.2f}")
+print(f"Sales Tax: ${sales_tax:.2f}")
+print(f"Total: ${total:.2f}")
+
+payment = float(input('\nWhat is the payment amount?'))
+change = payment - total
+print(f"Change: ${change:.2f}")
