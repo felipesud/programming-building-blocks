@@ -1,5 +1,5 @@
 #02 Prove: Assignment - Word Games
-#Student: Felipe dos Santos Belisario
+#Student: Felipe dos Santos Belisário
 
 print('Please enter the following:')
 print()
