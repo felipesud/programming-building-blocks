@@ -8,3 +8,6 @@
 [Week 02 - Input / Output](https://github.com/felipesud/programming-building-blocks/tree/master/week02_input_output) 
 
 [Week 03 - Variables and Expressions](https://github.com/felipesud/programming-building-blocks/tree/master/week03_variables_expressions) 
+
+[Week 04 - Solving Problems Using Variables and Expressions](https://github.com/felipesud/programming-building-blocks/tree/master/week04_solving_problems_variables_expressions)
+
