@@ -11,3 +11,5 @@
 
 [Week 04 - Solving Problems Using Variables and Expressions](https://github.com/felipesud/programming-building-blocks/tree/master/week04_solving_problems_variables_expressions)
 
+[Week 05 - Decisions](https://github.com/felipesud/programming-building-blocks/tree/master/week05_decisions)
+
