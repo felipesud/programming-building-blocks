@@ -41,6 +41,6 @@ print(f'Your grade is: {letter}{sign}')
 if grade >= 70:
     print('Congratulations!! You passed')
 else:
-    print('Oh no you failed')
+    print('Oh no you failed, try again next semester')
     
 
