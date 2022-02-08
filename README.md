@@ -13,3 +13,4 @@
 
 [Week 05 - Decisions](https://github.com/felipesud/programming-building-blocks/tree/master/week05_decisions)
 
+[Week 06 - Solving Problems Using Decisions](https://github.com/felipesud/programming-building-blocks/tree/master/week06_solving_problems_decisions)
