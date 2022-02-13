@@ -27,16 +27,23 @@ while True:
     
     #2nd way
     if user_choice == 'exchange':
-       print('\nYes!, let\'s show your money to Laban!')
-       user_choice_way = input('\nYou went to your house and got all kinds of gold and precious things to exchange for the plates. Now you have 2 options, you can take EVERYTHING to Laban or you can SAVE some for a future counter-proposal. What do you prefer?').lower()
-       if user_choice_way == 'everything':
+        print('\nYes!, let\'s show your money to Laban!')
+        user_choice_way = input('\nYou went to your house and got all kinds of gold and precious things to exchange for the plates. Now you have 2 options, you can take EVERYTHING to Laban or you can SAVE some for a future counter-proposal. What do you prefer?').lower()
+        if user_choice_way == 'everything':
            print('\nLaban is very ambitious, he became interested in your treasure and ordered his guards to steal it. Too bad, you lost your money and ran out of plates. Game Over')
            break
-    if user_choice_way == 'save':
-        user_choice_way2 = input('\nYou are a negotiator! Laban got interested and made a low offer, you now have a chance to RAISE the offer or FOLD. What do you want to do?').lower()
-        if user_choice_way2 == 'raise':
-            print('Great! Laban accepted the offer and handed over the plates, now you can return to your father\'s tent ')
-        else:
-            print('\nIn such a negotiation you cannot be afraid. Laban sensed your fear and ordered his guards to steal all of your treasure. Too bad, you lost your money and ran out of plates. Game Over')        
+        if user_choice_way == 'save':
+            user_choice_way2 = input('\nYou are a negotiator! Laban got interested and made a low offer, you now have a chance to RAISE the offer or FOLD. What do you want to do?').lower()
+            if user_choice_way2 == 'raise':
+                print('Great! Laban accepted the offer and handed over the plates, now you can return to your father\'s tent ')
+            elif user_choice_way2 == 'fold':
+                print('\nIn such a negotiation you cannot be afraid. Laban sensed your fear and ordered his guards to steal all of your treasure. Too bad, you lost your money and ran out of plates. Game Over')        
             break
+        else:
+            print("\nLet's try again, please, type: EVERYTHING or SAVE\n")
+    
+    #3rd way
+    if user_choice == 'disguise':
+        user_choice_way2 = input('\n').lower()
+        
 
