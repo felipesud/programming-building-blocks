@@ -3,8 +3,13 @@
 #By: Felipe dos Santos Belisário
 
 #Looking for Brass Plates
-user_choice_way = ""
 user_choice = ""
+user_choice_way = ""
+user_choice_way2 = ""
+user_choice_way3 = ""
+user_choice_way4 = ""
+user_choice_way5 = ""
+user_choice_way6 = ""
 
 print('\n*                 Welcome to The Brass Plates Game!                 *\n')
 while True:
@@ -44,6 +49,31 @@ while True:
     
     #3rd way
     if user_choice == 'disguise':
-        user_choice_way2 = input('\n').lower()
-        
+        user_choice_way2 = input('\nCool, you took advantage of Laban\'s absence and got dressed. The problem is that he will arrive soon, you have to be fast. You can RUN and do everything in a hurry, you can also impersonate Laban and SEND the servants to get the plates for you, or you can ENJOY and get Laban\'s sword for you before taking the plates.').lower()
+        if user_choice_way2 == 'run':
+            print('Well done! You got the plates in time before Laban returned. Congratulations, now you can go back to your father\'s tent. ')
+            break    
+        elif user_choice_way2 == 'send':
+            user_choice_way3 = input('\nFor the servant not to distrust you, take the SWORD or IMITATE the voice of Laban. Please choose a way forward').lower()
+            if user_choice_way3 == 'sword':
+                print('Zoran the servant is scared. You reassured him, you took the signs, and now you and he will return to your father\'s tent.')
+                break
+            elif user_choice_way3 == 'imitate':
+                user_choice_way4 = input('\nWhen ordering the servants to take the plates, you can either be SEVERE in your words or POLITE. How do you want to speak?').lower()
+                if user_choice_way4 == 'severe':
+                    print('\nVery well, this is how Laban treats his servants, no one suspected you, the servants took the plates, gave them to you. Now you can go back to your father\'s tent.')
+                    break
+                elif user_choice_way4 == 'polite':
+                    user_choice_way5 = input('\nThe servants noticed something strange, as Laban is not usually so polite. They saw you\'re an imposter and they want to arrest you. You can ESCAPE them or HIDE yourself to try and get the plates somehow.').lower()
+                    if user_choice_way5 == 'escape':
+                        print('\nUnfortunately, your cover didn\'t work and you didn\'t manage to get the plates. Try again.')
+                        break
+                    elif user_choice_way5 == 'hide':
+                        user_choice_way6 = input('\nNow you are hidden. Laban seems to be getting home, you need to be quick. Wait for Laban to arrive, you take the plates and sneak out the WINDOW, or you can grab the SWORD and fight the guards. What do you choose?').lower()
+                        if user_choice_way6 == 'window':
+                            print('\nCongratulations on your courage, you were smart and took the plates even though you were in an adverse situation.')
+                            break
+                        elif user_choice_way6 == 'sword':
+                            print('\nAlone against all those guards, it would be impossible to win, wouldn\'t it? You were caught by the guards. Game Over')
+                            break
 
