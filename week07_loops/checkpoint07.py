@@ -13,8 +13,12 @@ while is_positive == False:
     else:
         print('Sorry, that is a negative number. Please try again. ')
 
-
-
-
-
 #02 - Use a while loop, to simulate a child asking their parent for a piece of candy. Have the program keep looping until the user answers "yes", then have the program output "Thank you."
+child_asking = ""
+may_i_have = False
+while may_i_have == False:
+    child_asking = input('May I have a piece of candy?').lower()
+    if child_asking == 'yes':
+        print('Thank You')
+        may_i_have = True
+    
