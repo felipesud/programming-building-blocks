@@ -28,4 +28,5 @@ pixels_desert[203, 100] = (255, 0, 0)
 pixels_desert[204, 100] = (255, 0, 0)
 pixels_desert[205, 100] = (255, 0, 0)
 
+image_desert.save('desert.jpg')
 image_desert.show()
