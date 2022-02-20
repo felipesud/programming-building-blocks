@@ -3,11 +3,29 @@
 #By: Felipe dos Santos Belisário
 
 
-# This line imports or includes the library we will need
+
 from PIL import Image
 
-# This line opens the image and loads it into a variable called "image_original"
-image_original = Image.open("./beach.jpg")
 
-# This line attempts to open a new window to display the image.
-image_original.show()
+image_desert = Image.open('desert.jpg')
+
+
+
+print(image_desert.size)
+print(image_desert.format)
+
+pixels_desert = image_desert.load()
+
+print(pixels_desert[201, 100])
+print(pixels_desert[202, 100])
+print(pixels_desert[203, 100])
+print(pixels_desert[204, 100])
+print(pixels_desert[205, 100])
+
+pixels_desert[201, 100] = (255, 0, 0)
+pixels_desert[202, 100] = (255, 0, 0)
+pixels_desert[203, 100] = (255, 0, 0)
+pixels_desert[204, 100] = (255, 0, 0)
+pixels_desert[205, 100] = (255, 0, 0)
+
+image_desert.show()
