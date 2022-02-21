@@ -16,3 +16,5 @@
 [Week 06 - Solving Problems Using Decisions](https://github.com/felipesud/programming-building-blocks/tree/master/week06_solving_problems_decisions)
 
 [Week 07 - Loops](https://github.com/felipesud/programming-building-blocks/tree/master/week07_loops)
+
+[Week 08 - Solving Problems Using Loops](https://github.com/felipesud/programming-building-blocks/tree/master/week06_solving_problems_loops)
