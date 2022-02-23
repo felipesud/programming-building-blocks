@@ -12,7 +12,7 @@ for color in colors:
 
 #02 - Use a for loop to display the numbers 1–8, one number on each line
 print('\n02 - Use a for loop to display the numbers 1–8, one number on each line')
-for numbers in range(9):
+for numbers in range(1, 9):
     print(numbers)
 
 
