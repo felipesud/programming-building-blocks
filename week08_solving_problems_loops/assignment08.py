@@ -5,31 +5,31 @@
 
 from PIL import Image
 #Call Images
-picture_one = Image.open('./cat_small.jpg')
-picture_two = Image.open('./forest.jpg')
+picture_one = Image.open('./cactus.jpg')
+picture_two = Image.open('./desert.jpg')
 
 
 #Pick-up the Image sizes
-cat_small_width, cat_small_height = picture_one.size
+item_small_width, item_small_height = picture_one.size
 
 #Loading pixels
-pixels_cat = picture_one.load()
-pixels_forest = picture_two.load()
+pixels_item = picture_one.load()
+pixels_background = picture_two.load()
 
 new_picture = Image.new('RGB', picture_one.size)
-new_buffer_pixels = new_picture.load()
+new_picture_pixels = new_picture.load()
 
-line = 0
-column = 0
 
-for column in range (0, cat_small_width):
-    for line in range (0, cat_small_height):
-        r, g, b = pixels_cat [column, line]
-        print(f'({column}, {line})')
-        if r<100 and g == 207 and b < 100:
-            new_buffer_pixels[column, line] = pixels_forest
+
+for column in range (0, item_small_width):
+    for line in range (0, item_small_height):
+        (r, g, b) = pixels_item [column, line]
+        (br, bg, bb) = pixels_background[column, line]
+        # print(f'({column}, {line})')
+        if (r <100 and g > 200 and b < 100):
+            new_picture_pixels[column, line] = (br, bg, bb)
         else:
-            print(f'r: {r} g: {g} b: {b}')
-            new_buffer_pixels[column, line] = pixels_cat
-new_picture.show()
+            # print(f'r: {r} g: {g} b: {b}') 
+            new_picture_pixels[column, line] = (r, g, b)
+new_picture.save('cactus_desert.jpg')
 
