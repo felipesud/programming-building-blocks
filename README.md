@@ -18,3 +18,5 @@
 [Week 07 - Loops](https://github.com/felipesud/programming-building-blocks/tree/master/week07_loops)
 
 [Week 08 - Solving Problems Using Loops](https://github.com/felipesud/programming-building-blocks/tree/master/week08_solving_problems_loops)
+
+[Week 09 - Lists](https://github.com/felipesud/programming-building-blocks/tree/master/week09_lists)
