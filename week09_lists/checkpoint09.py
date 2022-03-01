@@ -15,6 +15,9 @@ while friend_name != 'end':
     friend_name = input('Type the name of a friend: ')
     friends.append(friend_name)
 
+print()
+print("Your friends are:")
+
 for friend in friends:
     if friend != 'end':
         print(friend)
