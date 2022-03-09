@@ -9,10 +9,11 @@ new_item = ''
 price_new_item = 0
 item_add_cart = 0
 item_amount = 0
+to_remove = 0
 
-print('\n***********************************************')
-print('*   Welcome to the Shopping Cart Program!     *')
-print('***********************************************\n')
+print('\n=================================================')
+print('*                 SHOPPING CART                 *')
+print('=================================================\n')
 
 #A menu system that repeats until the user chooses quit.
 while True:
@@ -44,20 +45,25 @@ while True:
             print(f'{i + 1}.{item} - {amount} units for ${price:.2f} - Total: ${amount * price:.2f}')
      #The system will request wich item to remove, the user type the number. To find the right index, i did user_choice -1 (line 48)      
     elif new_item == 3:
-        to_remove = int(input('Which item would you like to remove? ')) - 1
-        #With variable wich_item I can show the name of item that were deleted, see on line 54
-        wich_item = items_cart[to_remove]
-        items_cart.pop(to_remove)
-        prices_cart.pop(to_remove)
-        items_quantities.pop(to_remove)
-        #print the result of operation to the user
-        print(f'{wich_item} removed successfully.')
+        
+        if len(items_cart) >= to_remove:
+                to_remove = int(input('Which item would you like to remove? ')) - 1
+        #With variable which_item I can show the name of item that were deleted, see on line 54
+                which_item = items_cart[to_remove]
+                items_cart.pop(to_remove)
+                prices_cart.pop(to_remove)
+                items_quantities.pop(to_remove)
+                #print the result of operation to the user
+                print(f'{which_item} removed successfully.')
+                
+        else:
+                print('Please, enter a correct number')
     elif new_item == 4:
         #In this case I just did total of prices times total of amount to have the total of cost.
         sum_prices = sum(prices_cart) * sum(items_quantities)
         print(f'The total cost of the items in the shopping cart is: {sum_prices:.2f}')
     elif new_item == 5:
-        print('\nThank you for using the Shopping Cart Program! Goodbye')
+        print('\nThank you Goodbye')
         break
     else:
         print('\nWrong choice, please, try again')
