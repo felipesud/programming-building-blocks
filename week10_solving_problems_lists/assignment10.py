@@ -10,7 +10,7 @@ print('\n***********************************************')
 print('*   Welcome to the Shopping Cart Program!     *')
 print('***********************************************\n')
 
-# 1. Have menu system that repeats until the user chooses quit.
+# 1. Have menu system that repeats until the user chooses quit
 while True:
     new_item = int(input('\nChoose 1,2,3'))
     if new_item == 1:
