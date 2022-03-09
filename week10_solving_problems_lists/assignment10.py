@@ -1,27 +1,35 @@
-#Assignment Week 09
+#Assignment Week 10
 #From: https://byui-cse.github.io/cse110-course/lesson09/prove.html
 #By: Felipe dos Santos Belisário
 
-shopping_cart = []
+items_cart = []
+prices_cart = []
 new_item = ''
+price_new_item = 0
 item_add_cart = 0
-id_item = 0
+
 print('\n***********************************************')
 print('*   Welcome to the Shopping Cart Program!     *')
 print('***********************************************\n')
 
 # 1. Have menu system that repeats until the user chooses quit
 while True:
-    new_item = int(input('\nChoose 1,2,3'))
+    new_item = int(input(
+        "Please select one of the following: \n" \
+        "1. Add item\n" \
+        "2. View cart\n" \
+        "3. Remove item\n" \
+        "4. Compute total\n" \
+        "5. Quit\n" \
+    ))
     if new_item == 1:
-# 2. Create a list that will store the names of the items in the shopping cart.
         item_add_cart = input('\nWhat item would you like to add?').capitalize()
-# 3. Complete the option to add the name of the item to the list.
-        shopping_cart.append(item_add_cart)
-        id_item += 1
-# 4. Complete the option to display the names of the items in the list.
+        price_new_item = float(input(f'What is the price of "{item_add_cart}"?'))
+        items_cart.append(item_add_cart)
+        prices_cart.append(price_new_item)
+     
     elif new_item == 2:
-        for i in shopping_cart:
+        for i in items_cart:
             print(i)
     elif new_item == 3:
             print('*  Thanks for using the Shopping Cart Program!  *')
