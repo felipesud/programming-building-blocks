@@ -60,11 +60,8 @@ while True:
                 print('Please, enter a correct number')
     elif new_item == 4:
         #In this case I just did total of prices times total of amount to have the total of cost.
-        for i in range(len(items_quantities)):
-            price = prices_cart[i]
-            amount = items_quantities[i]
-        sum_prices = sum(amount * price)
-        print(f'The total cost of the items in the shopping cart is: {sum_prices:.2f}')
+        sum_prices = sum(prices_cart)
+        print(f'The total price of the items in the shopping cart is: {sum_prices:.2f}')
     elif new_item == 5:
         print('\nThank you Goodbye')
         break
