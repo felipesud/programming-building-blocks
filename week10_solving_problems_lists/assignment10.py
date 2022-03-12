@@ -28,7 +28,7 @@ while True:
    #The user will insert the NAME, AMOUNT (Exceeding requirements) and PRICE of the item
     new_item = int(input('Please enter an action: '))
     if new_item == 1:
-        item_add_cart = input('What item would you like to add?').capitalize()
+        item_add_cart = input('What item would you like to add? ').capitalize()
         item_amount = int(input(f'How many {item_add_cart} do you want? '))
         price_new_item = float(input(f'What is the price of "{item_add_cart}"?'))
         items_quantities.append(item_amount)
@@ -61,7 +61,7 @@ while True:
     elif new_item == 4:
         #In this case I just did total of prices using the sum function.
         sum_prices = sum(prices_cart)
-        print(f'The total price of the items in the shopping cart is: {sum_prices:.2f}')
+        print(f'The total price of the items in the shopping cart is: ${sum_prices:.2f}')
     elif new_item == 5:
         print('\nThank you Goodbye')
         break
