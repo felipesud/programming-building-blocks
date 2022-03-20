@@ -2,18 +2,26 @@
 # From: https://byui-cse.github.io/cse110-course/lesson11/prove.html
 # By: Felipe dos Santos Belisário
 
-from itertools import count
-
+countries_list = []
+acronyms_list = []
+years_list = []
+countries_data = []
 
 
 
 with open('./life-expectancy.csv') as life_expectancy:
     for line in life_expectancy:
         line = line.strip()
-        country, acronym, year, countries_data = line.split(",")
-      
+        country, acronym, year, expectancy = line.split(",")
+        countries_list.append(country)
+        acronyms_list.append(acronym)
+        years_list.append(year)
+        countries_data.append(expectancy)
+        print(expectancy)
 
+  
 
-    expectancy_value = countries_data[3]
-    print(f"The max life expectancy was {max(expectancy_value)}")
-    print(f"The min life expectancy was {min(expectancy_value)}")
+highest = max(countries_data)
+lowest = min(countries_data)
+print(f"The min life expectancy was: {lowest}")
+print(f"The max life expectancy was: {highest}")
