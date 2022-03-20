@@ -22,3 +22,5 @@
 [Week 09 - Lists](https://github.com/felipesud/programming-building-blocks/tree/master/week09_lists)
 
 [Week 10 - Solving Problems Using Lists](https://github.com/felipesud/programming-building-blocks/tree/master/week10_solving_problems_lists)
+
+[Week 11 - Files](https://github.com/felipesud/programming-building-blocks/tree/master/week11_files)
