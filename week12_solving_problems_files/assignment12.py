@@ -10,8 +10,10 @@ country_chosen = []
 life_chosen = []
 is_selected = False
 largest = 0
+smallest = 9999999999999999
+average_list = []
 
-user_year = int(input('\nPlease type a year: '))
+choose_year = int(input('\nPlease type a year: '))
 
 with open('./life-expectancy.csv') as life_expectancy_file:
     next(life_expectancy_file)
@@ -32,8 +34,7 @@ with open('./life-expectancy.csv') as life_expectancy_file:
         #     user_country, user_code, user_year, user_life = line.split(",")
         #     country_chosen.append(user_country)
         #     life_chosen.append(user_life)
-        #     max_life = life_chosen.index(max(life_chosen))
-        #     min_life = life_chosen.index(min(life_chosen))
+        #     
            
         #     # mean = statistics.mean(life_chosen)
           
@@ -46,7 +47,7 @@ lowest = life.index(min(life))
 
 
 
-print(f"The overall max life expectancy is: {life[highest]} from {country_list[highest]} in {years_list[highest]}")
+print(f"\nThe overall max life expectancy is: {life[highest]} from {country_list[highest]} in {years_list[highest]}")
 print(f"The overall min life expectancy is: {life[lowest]} from {country_list[lowest]} in {years_list[lowest]}")
     
 # if is_selected:    
@@ -57,18 +58,28 @@ print(f"The overall min life expectancy is: {life[lowest]} from {country_list[lo
 #     print(f'The min life expectancy was in {country_chosen[min_life]} with {life_chosen[min_life]} ')
 
 with open("./life-expectancy.csv") as user_life_file:
-    next(life_expectancy_file)
-    
-    for line in user_life_file:
+     print(f'For the year {choose_year}')
+     next(user_life_file)
+     
+     for line in user_life_file:
         line = line.strip()
-        user_country, user_code, user_year, user_life = line.split(",")
+        parts = line.split(",")
+        print(parts)
+        user_country = parts[0]
+        user_code = parts[1]
+        user_year = parts[2]
+        user_life = parts[3] 
         
-        if int(year) == int(user_year):
-            print(f"Country: {user_country}, Code: {user_code}, Year: {user_year}, Life: {user_life}")
-            
-            if largest < float(user_life):
-                largest = float(user_life)
-                largest_country = user_country
+        # if int(year) == int(choose_year):
 
-if largest_country:
-    print(f"\nThe max life expectancy was in {largest_country} with {largest}")
+        # average_list.append(user_life)
+        # mean = statistics.mean(average_list)
+        # print(f'The average life expectancy across all countries was {mean}')
+                        
+        
+           
+max_life = user_life.index(max(user_life))
+min_life = user_life.index(min(user_life))   
+
+print(f"\nThe max life expectancy was in {user_country[max_life]} with {user_life[max_life]}")  
+print(f"The min life expectancy was in {user_country[min_life]} with {user_life[min_life]}")      
