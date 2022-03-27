@@ -70,11 +70,7 @@ with open("./life-expectancy.csv") as user_life_file:
         user_year = parts[2]
         user_life = parts[3] 
         
-        # if int(year) == int(choose_year):
-
-        # average_list.append(user_life)
-        # mean = statistics.mean(average_list)
-        # print(f'The average life expectancy across all countries was {mean}')
+     
                         
         
            
