@@ -27,3 +27,5 @@
 
 [Week 12 - Solving Problems Using Files](https://github.com/felipesud/programming-building-blocks/tree/master/week12_solving_problems_files)
 
+[Week 13 - Function Basics](https://github.com/felipesud/programming-building-blocks/tree/master/week13_function)
+
