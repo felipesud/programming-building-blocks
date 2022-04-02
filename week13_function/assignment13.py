@@ -10,15 +10,27 @@ def calculate_windchill(temperature, wind_speed):
 
 def celsius_to_fahrenheit(degree):
     return (degree * (9 / 5) + 32)
-    
 
-user_temperature = float(input('What is the temperature? '))
+welcome = ''
+goodbye = ''    
+def welcome_screen(welcome):
+    welcome = 'Welcome to the Wind Chill Calculations!'
+    return welcome
+
+def goodbye_screen(goodbye):
+    goodbye = 'Thank you, Good Bye!'
+    return goodbye
+
+print(welcome_screen(welcome))    
+user_temperature = float(input('\nWhat is the temperature? '))
 
 degree_type = input('Fahrenheit or Celsius (F/C)? ').upper()
-if user_temperature == 'C':
+if degree_type == 'C':
     user_temperature = celsius_to_fahrenheit(user_temperature)
         
 
 for wind_speed in range(5, 61, 5):
     windchill = calculate_windchill(user_temperature, wind_speed)
     print(f"At temperature {user_temperature}F, and wind speed {wind_speed} mph, the windchill is: {windchill:6.2f}F")
+print()
+print(goodbye_screen(goodbye))
